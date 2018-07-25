@@ -1,0 +1,25 @@
+.topScreen {
+    background-image: url('http://backgroundcheckall.com/wp-content/uploads/2017/12/coding-background-image.png')
+}
+
+nav {
+    background: #a29bfe
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+li {
+    float: left;
+}
+
+li, a {
+    display: block;
+    padding:  8px;
+
+}
