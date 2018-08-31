@@ -2,8 +2,27 @@
     background-image: url('http://backgroundcheckall.com/wp-content/uploads/2017/12/coding-background-image.png')
 }
 
+body{
+    background: #7158e2
+}
+
+.mainTitle, .subMainTitle {
+    color: whitesmoke
+}
+
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
 nav {
-    background: #a29bfe
+    background: #ff4d4d
 }
 
 ul {
@@ -14,6 +33,17 @@ ul {
     
 }
 
+.carousel{
+    align-content: center;
+    width: 50%;
+    height: 50%;
+}
+
+.profPic{
+    width: 30%;
+    height: 50%;
+}
+
 li {
     float: left;
 }
@@ -21,5 +51,16 @@ li {
 li, a {
     display: block;
     padding:  8px;
-
 }
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }

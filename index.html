@@ -8,18 +8,18 @@
     <title>Alex Baranov Development</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="icon" href="./assets/imgs/favicon.png">
+        <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <script src ='./assets/javascript/index.js'></script>
+    <link rel="icon" href="./assets/imgs/favicon.png">
+    <script src='./assets/javascript/index.js'></script>
 </head>
 
 <body>
     <div class="container">
         <div class="topScreen">
-            <h1 class="mainTitle">Alex Baranov</h1>
-            <h2 class="subMainTitle">Full Stack Web Developer</h2>
+            <h1 class="typewriter mainTitle">Alex Baranov</h1>
+            <h1 class="typewriter subMainTitle">Full Stack Web Developer</h2>
         </div>
         <nav class="navbar navbar-expand-lg" id="navbar">
             <a class="navbar-brand nav-link">Alex Baranov</a>
@@ -39,27 +39,74 @@
             </ul>
         </nav>
         <div id="About">
-
+            <h1>About</h1>
+            <br>
+            <br>
+            <img class='profPic' src="./assets/imgs/20180818_112118.jpg" <br>
+            <br>
+            <p>A full stack web developer with a strong knowledge of both front end and backend frameworks and worked in various
+                service and health based industries and has cooperated with all types of personalities in the work environment.
+                I focus on delivering easy to maneuver UI/UX while also creating reliable server-side functionality. With
+                the ability to quickly learn and adapt to any new technology or computer language, I actively continue to
+                advance my technical skillsets and always look to improve my abilities as a developer. In my leisure time
+                I am an avid fitness enthusiast that hones his Brazilian jiu-jitsu skills much the same way I hone my coding
+                abilities, through hard work and patience.</p>
 
         </div>
-        <div id="Tools">
-            <div class="slickCarousel">
-                <div>your content</div>
-                <div>your content</div>
-                <div>your content</div>
+        <h1>Tools Used For Development</h1>
+        <div class="center" id="Tools" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+            <div><img class="carousel" src="./assets/imgs/jquery-3.png"></div>
+            <div><img class="carousel" src="./assets/imgs/htmllogo.png"></div>
+            <div><img class="carousel" src="./assets/imgs/csslogo.png"></div>
+            <div><img class="carousel" src="./assets/imgs/javascriptlogo.png"></div>
+            <div><img class="carousel" src="./assets/imgs/react-logo.png"></div>
+            <div><img class="carousel" src="./assets/imgs/handlebars_logo.png"></div>
+            <div><img class="carousel" src="./assets/imgs/mysql.svg"></div>
+            <div><img class="carousel" src="./assets/imgs/mongodb.png"></div>
+        </div>
+            <div id="Projects">
+                <h1>Projects Completed</h1>
             </div>
 
-        </div>
-        <div id="Projects">
+            <div id="Contact">
+                <h1>Contact Info</h1>
+                <p>For inquries I can be reached anytime via Cellphone @ (732) 470-6584</p>
+                <br>
+                <p>Or Email @ AlexBaranov43@gmail.com</p>
 
-        </div>
-
-        <div id="Contact">
-
-        </div>
-    </div>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+            </div>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.center').slick({
+                    centerMode: true,
+                    centerPadding: '10px',
+                    slidesToShow: 3,
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                arrows: false,
+                                centerMode: true,
+                                centerPadding: '40px',
+                                slidesToShow: 3
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                arrows: false,
+                                centerMode: true,
+                                centerPadding: '40px',
+                                slidesToShow: 1
+                            }
+                        }
+                    ]
+                });
+            })
+        </script>
 </body>
+
 </html>
